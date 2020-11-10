@@ -1,0 +1,16 @@
+.image {
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center 0;
+	background-size: contain;
+	position: relative;
+	padding-bottom: 100%;
+
+	&--loaded {
+		animation: fadeIn 1s linear 1;
+	}
+	&--hovered {
+		cursor: pointer;
+	}
+}
+

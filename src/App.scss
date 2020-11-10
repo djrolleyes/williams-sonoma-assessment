@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+  --color-text: #050708;
+  --color-icons: #363636;
+  --color-offer: #af1a31;
+}
+
+$bp-largest: 75em;   // 1200px
+$bp-large: 62.5em;   // 1000px
+$bp-medium: 50em;    // 800px;
+$bp-small: 37.5em;    // 600px;
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+    
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-large) {
+        font-size: 70%;
+    } 
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 80%;
+    } 
+     @media only screen and (max-width: $bp-small) {
+        font-size: 90%;
+    } 
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    max-width: 114rem;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 3rem;
+}
+
+.hover {
+  cursor: pointer;
+}
+
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
